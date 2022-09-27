@@ -16,10 +16,10 @@ const Contact = () => {
       <div className="right">
         <h2>Contact.</h2>
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="Message"></textarea>
+          <input type="text" placeholder="#SendMeYourOffer :D" />
+          <textarea placeholder="I will add contacts soon..."></textarea>
           <button type="submit">Send</button>
-          {message && <span>Thanks, I'll reply ASAP :)</span>}
+          {message && <span>Under Construction... :)</span>}
         </form>
       </div>
     </div>

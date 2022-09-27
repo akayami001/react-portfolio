@@ -1,8 +1,11 @@
 import { useState } from "react";
-import arrow from '../../images/arrow.png'
-import mobile from '../../images/mobile.png'
-import globe from '../../images/globe.png'
-import writing from '../../images/writing.png'
+import arrow from "../../images/arrow.png";
+import mobile from "../../images/mobile.png";
+import globe from "../../images/globe.png";
+import writing from "../../images/writing.png";
+import img1 from "../../images/design.jpg";
+import img2 from "../../images/react.jpg";
+import img3 from "../../images/fullstack.jpg";
 
 const Works = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,21 +15,21 @@ const Works = () => {
       icon: `${mobile}`,
       title: "Web Design",
       desc: "Responsive Web Design",
-      img:"https://github.com/akayami001/card-component-challenge/raw/main/design/desktop-preview.jpg"
+      img: img1,
     },
     {
       id: "2",
       icon: `${globe}`,
       title: "React Applications",
       desc: "React applications with REST API",
-      img: "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+      img: img2,
     },
     {
       id: "3",
       icon: `${writing}`,
       title: "MERN Stack Development",
       desc: "Developed with MERN stack Technologies",
-      img: "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      img: img3,
     },
   ];
 
@@ -56,10 +59,7 @@ const Works = () => {
                 </div>
               </div>
               <div className="right">
-                <img
-                  src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                  alt=""
-                />
+                <img src={d.img} alt="image" />
               </div>
             </div>
           </div>
