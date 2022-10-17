@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-
 import { reactPortfolio, mernPortfolio, designPortfolio } from "../../data";
 
 const Portfolio = () => {
@@ -53,10 +52,12 @@ const Portfolio = () => {
       </ul>
       <div className="container">
         {data.map((d) => (
-          <div className="item">
-            <img src={d.img} alt="" />
-            <h3>{d.title}</h3>
-          </div>
+          <a href={`${d.url}`} target="_blank" rel="noreferrer">
+            <div className="item">
+              <img src={d.img} alt="" />
+              <h3>{d.title}</h3>
+            </div>
+          </a>
         ))}
       </div>
     </div>

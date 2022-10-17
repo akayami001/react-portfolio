@@ -1,7 +1,7 @@
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
-import admin from '../../images/IMG-20211222-WA0004-removebg-preview.png'
-import down from '../../images/down.png'
+import admin from "../../images/admin.png";
+import down from "../../images/down.png";
 
 const Intro = () => {
   const textRef = useRef();
@@ -24,11 +24,20 @@ const Intro = () => {
       </div>
       <div className="right">
         <div className="wrapper">
-          <h2>Hi There, I'm</h2>
+          <h2>Hi there, I'm</h2>
           <h1>Mehmet Ali Tutumlu</h1>
           <h3>
-            Freelance <span ref={textRef}></span>
+            Junior <span ref={textRef}></span>
           </h3>
+          <p>
+            I am a keen and innovative Full-stack Web Developer with a
+            background in Mathematics. Finding and implementing solutions for
+            modern problems was always my passion and now developing smooth
+            applications and creating best fit for personal needs is current
+            station of my life long learning journey. I’m now looking for a
+            junior position to finally kick start my career and learn among
+            professionals.
+          </p>
         </div>
         <a href="#portfolio">
           <img src={down} alt="down" />
